@@ -78,6 +78,105 @@
 }
 
 
+/* Masonry
+############################################################################# */
+.masonry {
+  display: grid;
+  aspect-ratio: 4 / 3;
+  grid-gap: var(--spacing-l);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .masonry-interruptor {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-tight);
+      text-align: center;
+    }
+    
+    .button {
+      align-self: center;
+
+      span {
+        display: inline-block;
+        font-weight: var(--font-weight-bold);
+        padding-inline: var(--spacing-m);
+      }
+    }
+    
+  }
+
+/* grid sizes */
+  .grid-item-1x1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .grid-item-1x2 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .grid-item-1x3 {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .grid-item-1x4 {
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+
+  .grid-item-2x1 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .grid-item-2x2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .grid-item-2x3 {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .grid-item-2x4 {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
+  .grid-item-3x1 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .grid-item-3x2 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .grid-item-3x3 {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .grid-item-3x4 {
+    grid-column: span 3;
+    grid-row: span 4;
+  }
+}
+
 /* About Carousel
 ############################################################################# */
 
