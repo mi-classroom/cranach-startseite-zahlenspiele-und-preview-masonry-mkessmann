@@ -105,7 +105,7 @@ figure:has(.infobox) {
 
 .button {
   background-color: var(--color-primary-default);
-  padding: 0 var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-s);
   border: none;
   color: #fff;
   font-size: var(--font-size-l);

@@ -109,7 +109,6 @@
       span {
         display: inline-block;
         font-weight: var(--font-weight-bold);
-        padding-inline: var(--spacing-m);
       }
     }
     
